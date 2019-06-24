@@ -1,9 +1,9 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
-<title>Éò´ºÁÖ</title>
-<style>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>æ²ˆæ˜¥æ—</title>
+<style type="text/css">
 	*{margin:0;padding: 0;}
 	input{margin: 10px;}
 	img{border: none;height: 100%;width: 100%}
@@ -18,7 +18,7 @@
 	</style>
 </head>
 <body>
-<center style="padding: 10px 0"><input type='button' value='µã»÷¿ªÊ¼' id='start'/></center>
+<center style="padding: 10px 0"><input type='button' value='ç‚¹å‡»å¼€å§‹' id='start'/></center>
 <div class="container" id='container'></div>
 <img class="thumb" src='picture/bg.jpg' />
 <script>
@@ -33,9 +33,9 @@
            this.minwidth=this.conwidth/this.col;
            this.minheight=this.conheight/this.row;
            this.num=this.row*this.col;
-       	   this.arr=[];//³õÊ¼»¯Êı×é;
-           this.newarr=[];//Ëæ»úÍ¼Æ¬Êı×é;
-           this.pos=[];//´æ·ÅÎ»ÖÃµÄ
+       	   this.arr=[];//åˆå§‹åŒ–æ•°ç»„;
+           this.newarr=[];//éšæœºå›¾ç‰‡æ•°ç»„;
+           this.pos=[];//å­˜æ”¾ä½ç½®çš„
            this.init();
 		       this.len=this.arr.length;
        	   this.minIndex=10; 	
@@ -164,8 +164,8 @@
          var t=document.createElement('p');
          var tn=ts||3;
          var timer=null;
-         suc.style.cssText='position:absolute;z-index:9999999;top:45%;width:100%;text-align:center;font-size:60px;color:#F56200;font-family:arial,ºÚÌå;';
-         suc.innerHTML='ÄãÓ®ÁË,À÷º¦!';
+         suc.style.cssText='position:absolute;z-index:9999999;top:45%;width:100%;text-align:center;font-size:60px;color:#F56200;font-family:arial,é»‘ä½“;';
+         suc.innerHTML='ä½ èµ¢äº†,å‰å®³!';
          suc.appendChild(t);
          this.con.appendChild(suc);
          function updatetime(){
@@ -218,7 +218,7 @@
            	  return Math.sqrt(c1*c1+c2*c2);
            }
    	   };
-       var  t=new Game(5,5);//ĞĞÓëÁĞ,ÖµÔ½´ó,ÄÑ¶ÈÔ½¸ß
+       var  t=new Game(5,5);//è¡Œä¸åˆ—,å€¼è¶Šå¤§,éš¾åº¦è¶Šé«˜
    	   document.getElementById('start').onclick=function(){
    	   	  t.startGame();
    	   }
