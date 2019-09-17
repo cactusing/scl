@@ -1,0 +1,32 @@
+<!DOCTYPE>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <title>demo</title>
+  <style type="text/css">
+
+  </style>
+</head>
+<body>
+
+  <script>
+
+    function add(a, b ,c) {
+      return c ;
+    }
+
+    function sub(a, b) {
+      return a + b;
+    }
+
+    console.log(add.call(sub, 2, 99 ,123));//3
+
+
+
+    var array = [1, 288888888888888888, 32222];
+    var max = Math.max(...array);
+    console.log(max);//3
+
+  </script>
+</body>
+</html>
