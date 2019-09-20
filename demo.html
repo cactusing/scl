@@ -10,6 +10,33 @@
 <body>
 
   <script>
+    let sda = [1,2,11,'www'];
+    for(let item of sda){
+      console.log(item);
+    }
+
+    var myMap = new Map();
+    myMap.set(0, "zero");
+    myMap.set(1, "one");
+    myMap.set(NaN, [1,2,11,'www']);
+    myMap.set(undefined, "one");
+    myMap.set('awwwww', "one");
+
+    // 将会显示两个 log。 一个是 "0 = zero" 另一个是 "1 = one"
+    for (var [key, value] of myMap) {
+      console.log(key + " = " + value);
+    }
+    for (var [key2, value2] of myMap.entries()) {
+      console.log(key2 + " = " + value2);
+    }
+   /* myMap.entries().forEach((kew,nal)=>{
+      console.log(kew + " = " + nal);
+    });*/
+    var mySet = new Set(["value1", "value1", "value2", "value3"]);
+    // 用...操作符，将 Set 转 Array
+    var myArray = [...mySet];
+
+    console.log(mySet);//3
 
     function add(a, b ,c) {
       return c ;
@@ -19,13 +46,13 @@
       return a + b;
     }
 
-    console.log(add.call(sub, 2, 99 ,123));//3
+   // console.log(add.call(sub, 2, 99 ,123));//3
 
 
 
     var array = [1, 288888888888888888, 32222];
     var max = Math.max(...array);
-    console.log(max);//3
+
 
   </script>
 </body>
