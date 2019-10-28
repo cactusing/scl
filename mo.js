@@ -11,15 +11,15 @@ var object_name = {
 var Site = /** @class */ (function () {
     function Site() {
     }
-    Site.prototype.name = function () {
+    Site.name3 = function () {
         console.log("Runoob");
     };
     ;
-    Site.prototype.name2 = function () {
+    Site.name2 = function () {
         var hello2 = "Hello World!";
         console.log("Runoob");
     };
     return Site;
 }());
 var obj = new Site();
-obj.name();
+Site.name3();

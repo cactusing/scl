@@ -54,7 +54,7 @@
     // 调用 get 方法，此时目标对象为空，没有 name 属性
     //proxyEpt.name // getting name
     // 调用 set 方法，向目标对象中添加了 name 属性
-    proxyEpt.name = 'Tom';
+    Site.name = 'Tom';
     // setting name
     // "Tom"
     // 再次调用 get ，此时已经存在 name 属性
@@ -70,7 +70,7 @@
     // handler 对象也可以为空，相当于不设置拦截操作，直接访问目标对象
     let targetEmpty = {};
     let proxyEmpty = new Proxy(targetEmpty,{});
-    proxyEmpty.name = "Tom";
+    Site.name = "Tom";
    // targetEmpty) // {name: "Tom"}
 
   </script>

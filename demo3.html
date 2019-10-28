@@ -1,0 +1,39 @@
+<!DOCTYPE>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <title>demo2</title>
+  <style type="text/css">
+
+  </style>
+  <!--<script src="mo.js"></script>-->
+</head>
+<body>
+
+  <script>
+
+    // 报错
+    const f = ["value1", "value4", "value2", "value3"];
+    const b = ["value81", "val7ue8", "va7lue2", "val7ue3"];
+
+    [...b,...f].forEach(item=>{
+     // console.log(item)
+    });
+
+    async function f1() {
+      return 999
+        /*let sd = await function () {
+          setTimeout(function () {
+            return 999
+          },3000)
+        };*/
+        //console.log(sd)
+    }
+
+    f1().then(v=>{
+      console.log(v)
+    })
+
+  </script>
+</body>
+</html>

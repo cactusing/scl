@@ -10,14 +10,15 @@ var object_name = {
     key4:["content1", "content2"] //集合
 };
 class Site {
-     name(): void {
+     static name3(): void {
         console.log("Runoob")
     };
 
-    name2(): void {
+    static name2(): void {
         const hello2 : string = "Hello World!";
         console.log("Runoob")
     }
 }
-var obj = new Site();
-obj.name();
+
+const obj = new Site();
+Site.name3();
